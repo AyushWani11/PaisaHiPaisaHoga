@@ -44,11 +44,6 @@ Each sector has a **custom strategy**:
 - **FMCG** → Breakout filter using ATR-based lower band
 - **BANK** → SMA(20) > SMA(63) momentum strategy
 
-### ✅ Macro Trend Filters
-Uses Nifty sector indices:
-- `^CNXIT`, `^CNXFMCG`, `^NSEBANK`
-- If index is above 200-day moving average, signals are allowed; else filtered out
-
 ### ✅ Long/Short Support
 Signal values:
 - `1` → Long
@@ -59,7 +54,7 @@ Signal values:
 Implements **Mean-Variance Optimization (MVO)** per day:
 - Allocation across active signals
 - Bounds: `-0.5 to +0.5` per sector
-- Ensures exposure across 2 sectors where possible
+- Ensures exposure across atleast 2 sectors where possible
 
 ### ✅ Risk Management
 - **Stop-loss** via drawdown-based cash switching
