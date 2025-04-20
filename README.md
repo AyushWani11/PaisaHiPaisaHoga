@@ -1,5 +1,5 @@
 
-# 📈 Sector-Based Dynamic Portfolio Optimization
+# ector-Based Dynamic Portfolio Optimization
 
 This repository implements a **Quantitative Trading System** for Indian stock markets using **sector-based dynamic portfolio rotation** strategies. It integrates custom signal generation, optimization techniques, risk management, and backtesting across multiple market regimes (2018–2025).
 
@@ -36,7 +36,7 @@ sector-rotator/
 
 ---
 
-## ⚙️ Features
+## Features
 
 ### Sector-Specific Signals
 Each sector has a **custom strategy**:
