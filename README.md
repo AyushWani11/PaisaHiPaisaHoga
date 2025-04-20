@@ -38,41 +38,41 @@ sector-rotator/
 
 ## ⚙️ Features
 
-### ✅ Sector-Specific Signals
+### Sector-Specific Signals
 Each sector has a **custom strategy**:
 - **TECH** → RSI Reversal (RSI(2) < 30)
 - **FMCG** → Breakout filter using ATR-based lower band
 - **BANK** → SMA(20) > SMA(63) momentum strategy
 
-### ✅ Long/Short Support
+### Long/Short Support
 Signal values:
 - `1` → Long
 - `-1` → Short
 - `0` → No position
 
-### ✅ Dynamic Portfolio Optimization
+### Dynamic Portfolio Optimization
 Implements **Mean-Variance Optimization (MVO)** per day:
 - Allocation across active signals
 - Bounds: `-0.5 to +0.5` per sector
 - Ensures exposure across atleast 2 sectors where possible
 
-### ✅ Risk Management
+### Risk Management
 - **Stop-loss** via drawdown-based cash switching
 - **Adaptive Drawdown Limit** (based on rolling volatility)
 - **Sector Cap**: Max 50% per sector
 - **Trailing Stop** and **breakeven logic**
 - Supports both **gross leverage control** and **capital scaling**
 
-### ✅ Backtesting Engine
+### Backtesting Engine
 - Realistic equity simulation using sector-wise allocations
 - Handles flat exposure days and capital preservation
 - Computes **rolling returns**, **portfolio curve**, **risk overlays**
 
-### ✅ Performance Evaluation
-- 📊 **CAGR**, **Sharpe Ratio**, **Max Drawdown**
-- 📉 **VaR**, **CVaR**, **Win/Loss ratio**
-- 📈 **Alpha/Beta vs Nifty 50**
-- 🧭 **Regime-wise CAGR** for:
+### Performance Evaluation
+- **CAGR**, **Sharpe Ratio**, **Max Drawdown**
+- **VaR**, **CVaR**, **Win/Loss ratio**
+- **Alpha/Beta vs Nifty 50**
+- **Regime-wise CAGR** for:
   - IL&FS Bear
   - Pre-COVID Bull
   - COVID Crash
@@ -109,7 +109,7 @@ python scripts/analyze_backtests.py
 
 ---
 
-## 💰 Capital Assumption
+## Capital Assumption
 
 - Initial Capital: ₹10,00,000
 - Final portfolio equity computed based on cumulative return
@@ -117,7 +117,7 @@ python scripts/analyze_backtests.py
 
 ---
 
-## 🧠 Future Enhancements (Optional Ideas)
+## Future Enhancements (Optional Ideas)
 
 - ML models (LSTM, news sentiment) for signal enhancement
 - Regime classification using unsupervised learning
@@ -126,7 +126,5 @@ python scripts/analyze_backtests.py
 
 ---
 
-## 👨‍💻 Built by
+## Built by
 Ayush Wani, IIT Guwahati
-
-Feel free to fork, enhance, or use this as a submission for backtest competitions or portfolio research!
